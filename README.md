@@ -14,3 +14,7 @@ python infoga.py
 `python infoga.py --target nsa.gov --source all`
 
 ![screen2](https://i.imgur.com/GQdhkvy.png)
+
+`python infoga.py --info rthosfe@nsa.gov`
+
+![screen3](https://i.imgur.com/1fjR90E.png)
