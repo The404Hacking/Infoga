@@ -31,7 +31,6 @@ from core.lib import http
 from core.lib import parser 
 from core.lib import colors 
 from core.lib import printer
-from core.lib import output
 from core.recon import google
 from core.recon import bing
 from core.recon import pgp
