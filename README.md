@@ -11,3 +11,6 @@ cd Infoga
 python infoga.py
 ```
 ## Usage
+`python infoga.py --target nsa.gov --source all`
+
+![screen2](https://i.imgur.com/GQdhkvy.png)
