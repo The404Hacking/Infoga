@@ -5,6 +5,6 @@ Infoga is a tool for gathering e-mail accounts information from different public
 ![screen1](https://i.imgur.com/2mQHewp.png)
 
 ## Installation
-'''
+"""
 git clone
-'''
+"""
