@@ -1,2 +1,1 @@
-# Infoga
-Infoga - Email Information Gathering
+# Infoga - Email Information Gathering
