@@ -251,14 +251,14 @@ class Infoga(object):
 		self.allemail.extend(emails)
 
 	def yahoo(self):
-		self.printf.test("Searching \"%s\" in Yahoo"%(self.target))
+		self.printf.test("Searching \"%s\" in Yahoo..."%(self.target))
 		search = yahoo.yahoo(self.target)
 		search.process()
 		emails = search.getemail()
 		self.allemail.extend(emails)
 
 	def pgp(self):
-		self.printf.test("Searching \"%s\" in Pgp"%(self.target))
+		self.printf.test("Searching \"%s\" in Pgp..."%(self.target))
 		search = pgp.pgp(self.target)
 		search.process()
 		emails = search.getemail()
