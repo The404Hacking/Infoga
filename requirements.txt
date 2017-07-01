@@ -1,5 +1,2 @@
 requests
-httplib
-urllib2
-string
 json
