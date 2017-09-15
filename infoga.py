@@ -36,6 +36,8 @@ from core.recon import bing
 from core.recon import pgp
 from core.recon import yahoo
 from core.recon import netcraft
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
+
 
 class Infoga(object):
 	color = colors.colors()
@@ -82,7 +84,7 @@ class Infoga(object):
 				self.printf.plus("Email: %s"%(allemail[x]))
 				data = {'lang':'en'}
 				data['email'] = allemail[x]
-				req = requests.packages.urllib3.disable_warnings()
+				req = requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 				req = requests.post("http://mailtester.com/testmail.php",data=data,verify=False)
 				regex = re.compile("[0-9]+(?:\.[0-9]+){3}")
 				ip = regex.findall(req.content)
@@ -91,7 +93,7 @@ class Infoga(object):
 					if e not in new:
 						new.append(e)
 				for s in range(len(new)):
-					req = requests.packages.urllib3.disable_warnings()
+					req = requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 					req = requests.get("https://api.shodan.io/shodan/host/"+new[s]+"?key=UNmOjxeFS2mPA3kmzm1sZwC0XjaTTksy",verify=False)
 					jso = json.loads(req.content,"utf-8")
 					try:
@@ -152,7 +154,7 @@ class Infoga(object):
 		try:
 			data = {'lang':'en'}
 			data['email'] = email 
-			req = requests.packages.urllib3.disable_warnings()
+			req = requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 			req = requests.post("http://mailtester.com/testmail.php",data=data,verify=False)
 			regex = re.compile("[0-9]+(?:\.[0-9]+){3}")
 			ip = regex.findall(req.content)
@@ -162,7 +164,7 @@ class Infoga(object):
 					new.append(e)
 			self.printf.plus("Email: %s"%email)
 			for s in range(len(new)):
-				req = requests.packages.urllib3.disable_warnings()
+				req = requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 				req = requests.get("https://api.shodan.io/shodan/host/"+new[s]+"?key=UNmOjxeFS2mPA3kmzm1sZwC0XjaTTksy",verify=False)
 				jso = json.loads(req.content)
 				try:
