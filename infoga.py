@@ -3,8 +3,8 @@
 #
 # Infoga: Email Information Gathering
 #
-# @url: https://github.com/m4ll0k/Infoga
-# @author: Momo Outaadi (M4ll0k)
+# @url: https://github.com/The404Hacking/Infoga
+# @author: Momo Outaadi (The404Hacking)
 #
 # Infoga is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -52,8 +52,8 @@ class Infoga(object):
 		print self.color.white(0)+"                                       "+self.color.reset()
 		print self.color.white(0)+"|| Infoga - Email Information Gathering"+self.color.reset()
 		print self.color.white(0)+"|| Infoga v4.1 - \"Mr.Robot\"          "+self.color.reset()
-		print self.color.white(0)+"|| Momo Outaadi (M4ll0k)               "+self.color.reset()
-		print self.color.white(0)+"|| https://github.com/m4ll0k/infoga    "+self.color.reset()
+		print self.color.white(0)+"|| Momo Outaadi (The404Hacking)               "+self.color.reset()
+		print self.color.white(0)+"|| https://github.com/The404Hacking/Infoga    "+self.color.reset()
 		print self.color.white(0)+"                                       "+self.color.reset()
 
 	def usage(self):
